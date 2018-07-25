@@ -1,17 +1,17 @@
 {
-  "name": "faker5",
+  "name": "@optimax/faker5",
   "description": "Generate massive amounts of fake contextual data",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "contributors": [
     "Marak Squires <marak.squires@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/Marak/Faker.js.git"
+    "url": "git+ssh://git@github.com/optimaxdev/faker.js.git"
   },
   "scripts": {
-    "lint": "node_modules/.bin/jshint ./lib --config ./.jshintrc",
-    "test": "node_modules/.bin/mocha test/*.*.js",
+    "lint": "jshint ./lib --config ./.jshintrc",
+    "test": "mocha test/*.*.js",
     "build": "cd build && ../node_modules/.bin/gulp && cd ../",
     "doc": "jsdoc -c conf.json -t ./node_modules/ink-docstrap/template -R README.md lib",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
@@ -63,5 +63,20 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/optimaxdev/faker.js/issues"
+  },
+  "homepage": "https://github.com/optimaxdev/faker.js#readme",
+  "directories": {
+    "doc": "doc",
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "faker",
+    "js"
+  ],
+  "author": ""
 }
